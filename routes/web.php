@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'Weather_Controller@home');
+Route::get('/json-view', 'Weather_Controller@jsonview');

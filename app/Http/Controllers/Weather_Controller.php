@@ -10,6 +10,13 @@ class Weather_Controller extends Controller
 
     	$sets = array('Temperatura' => '33°C', 'Jačina vetra' => '3 km/h', 'Vlažnost vazduha' => '98%');
 
-    	return view ('welcome', ['sets' => $sets]);
+    	return view ('welcome', ['weather' => $sets]);
+    }
+
+    public function jsonview(){
+
+    	$weather = array('Temperatura' => '33°C', 'Jačina vetra' => '3 km/h', 'Vlažnost vazduha' => '98%');
+
+    	return $weather;
     }
 }
