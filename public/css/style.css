@@ -1,0 +1,27 @@
+body {
+	background-image: url(/img/sky-web-background.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: 100%;
+}
+
+h1 {
+	text-align: center;
+	color: #A52A2A;
+	text-decoration: underline;
+	font-family: Arial;
+}
+
+#main {
+	text-align: center;
+	margin: 0 auto;
+	background-color: rgba(127, 255, 212, 0.1);
+	width: 15%;
+	padding: 5px;
+	border: 1px solid white;
+}
+
+p {
+	font-family: sans-serif;
+}
