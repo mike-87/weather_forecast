@@ -41,9 +41,8 @@ class Weather_Controller extends Controller
 
     public function widgets_api(){
 
-    	$local_array = array("location" => "Paris", "temperature" => 27, "temperature_unit" => "°C", "icon" => "/img/rain.svg");
+    	$forecast3 = new Day(array("location" => "London", "temperature" => 28, "temperature_unit" => "°C", "icon" => "/img/rain.svg"));
 
-    	return $local_array;
-
+    	return $forecast3->get_data();
     }
 }
