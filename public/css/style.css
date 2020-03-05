@@ -67,7 +67,7 @@ h1 {
 	border: 0;
 }
 
-p {
+p, span {
 	font-family: sans-serif;
 	color: white;
 	font-weight: bold;
@@ -75,6 +75,14 @@ p {
 	padding: 0;
 }
 
+p#temp {
+	display: inline-block;
+}
+
 p > img {
 	filter: invert(100%) sepia(5%) saturate(348%) hue-rotate(274deg) brightness(114%) contrast(100%);
+}
+
+button {
+	margin-top: 5px;
 }

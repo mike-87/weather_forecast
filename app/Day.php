@@ -29,7 +29,11 @@ class Day extends Model {
    	}
 
    	public function get_temperature_c() {
-   		return $this->temperature . $this->temperature_unit;
+   		return $this->temperature;
+   	}
+
+   	public function get_temperature_unit(){
+   		return $this->temperature_unit;
    	}
 
    	public function get_icon() {
