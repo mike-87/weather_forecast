@@ -12,7 +12,7 @@ class Weather_Controller extends Controller
 
     	$sets = array('Temperatura' => '33°C', 'Jačina vetra' => '3 km/h', 'Vlažnost vazduha' => '98%');
 
-    	return view ('welcome', ['weather' => $sets]);
+    	return view ('welcome', ['weather2' => $sets]);
     }
 
     public function jsonview(){
@@ -22,6 +22,7 @@ class Weather_Controller extends Controller
     	// return $weather;
 
     	$forecast = new Day;
+    	
 
     	$forecast->location = "Serbia";
     	$forecast->temperature = 22;
@@ -29,5 +30,12 @@ class Weather_Controller extends Controller
     	$forecast->icon = "some image";
 
     	return $forecast;
+    }
+
+    public function widgets(){
+    	
+    	$forecast2 = new Day(array("location" => "London", "temperature" => 28, "temperature_unit" => "°C", "icon" => "/img/rain.svg"));
+
+    	return view('widget', ['data' => $forecast2]);
     }
 }

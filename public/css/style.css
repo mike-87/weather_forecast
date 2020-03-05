@@ -22,6 +22,59 @@ h1 {
 	border: 1px solid white;
 }
 
+#widget-main{
+	margin: 0 auto;
+	text-align: center;
+	background-color: red;
+	width: 200px;
+	height: 200px;
+}
+
+#location{
+	text-align: center;
+	background-color: #464646 ;
+	width: 80px;
+	height: 30px;
+	padding: 10px 10px;
+	float:left;
+	margin: 0;
+	border: 0;
+	font-size: 12px;
+}
+
+#temperature{
+	text-align: center;
+	background-color: #464646 ;
+	width: 80px;
+	height: 20px;
+	padding: 15px 10px;
+	float: left;
+	margin: 0;
+	border: 0;
+	font-size: 25px;
+}
+
+#icon{
+	text-align: center;
+	text-align-last: center;
+	background-color: #464646;
+	vertical-align: middle;
+	clear: both;
+	width: 180px;
+	height: 90px;
+	padding: 30px 10px;
+	margin: 0;
+	border: 0;
+}
+
 p {
 	font-family: sans-serif;
+	color: white;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
+p > img {
+	filter: invert(100%) sepia(5%) saturate(348%) hue-rotate(274deg) brightness(114%) contrast(100%);
 }

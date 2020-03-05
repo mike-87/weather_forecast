@@ -13,3 +13,4 @@
 
 Route::get('/', 'Weather_Controller@home');
 Route::get('/json-view', 'Weather_Controller@jsonview');
+Route::get('/widgets/today', 'Weather_Controller@widgets');
